@@ -39,6 +39,15 @@
       .go-next {
         right: 1em;
       }
+
+      @media screen and (max-width: 1024px) {
+        .go-previous {
+          left: 0.5em;
+        }
+        .go-next {
+          right: 0.5em;
+        }
+      }
     }
   }
 
