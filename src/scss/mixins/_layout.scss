@@ -1,0 +1,22 @@
+// Defines a horizontal flexbox container
+@mixin flexContentRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+// Defines a vertical flexbox container
+@mixin flexContentColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@mixin widerContent {
+  @media screen and (min-width: 1025px) {
+    max-width: 1000px;
+  }
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+  }
+}

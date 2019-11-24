@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title id="title"></title>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/scss/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="app-header">
+        <div class="container">
+          <div class="app-header__logo">
+            <img src="src/img/logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="app-content full-width">
+        <div class="item">
+          <div class="container">
+            <div class="item-header">
+              <h1 id="address" class="item-header__address"></h1>
+              <h5 id="city" class="item-header__city txt--pale"></h5>
+              <h3 id="price" class="item-header__price"></h3>
+            </div>
+          </div>
+          <div class="item-wrapper center-aligned">
+            <div class="item-gallery position-relative">
+              <div id="slider-container"></div>
+              <div id="slider-control">
+                <i
+                  class="fas fa-chevron-left position-absolute go-previous"
+                ></i>
+                <i class="fas fa-chevron-right position-absolute go-next"></i>
+              </div>
+            </div>
+            <ul class="item-highlights hidden-mobile">
+              <li>
+                <i class="fas fa-home"></i
+                ><span class="txt--strong">Year of construction</span>
+                <div id="year"></div>
+              </li>
+              <li>
+                <i class="far fa-square"></i
+                ><span class="txt--strong">Living area</span>
+                <div><span id="area"></span><span> m²</span></div>
+              </li>
+              <li>
+                <i class="fas fa-door-open"></i>
+                <span class="txt--strong">Number of rooms</span>
+                <div><span id="rooms"></span><span> rooms</span></div>
+              </li>
+              <li>
+                <i class="fas fa-ruler-combined"></i>
+                <span class="txt--strong">Plot size</span>
+                <div><span id="plot"></span><span> m²</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <ul class="item-highlights hidden-desktop">
+              <li>
+                <i class="fas fa-home"></i
+                ><span class="txt--strong">Year of construction</span>
+                <div id="year--m"></div>
+              </li>
+              <li>
+                <i class="far fa-square"></i
+                ><span class="txt--strong">Living area</span>
+                <div><span id="area--m"></span><span> m²</span></div>
+              </li>
+              <li>
+                <i class="fas fa-door-open"></i>
+                <span class="txt--strong">Number of rooms</span>
+                <div><span id="rooms--m"></span><span> rooms</span></div>
+              </li>
+              <li>
+                <i class="fas fa-ruler-combined"></i>
+                <span class="txt--strong">Plot size</span>
+                <div><span id="plot--m"></span><span> m²</span></div>
+              </li>
+            </ul>
+            <div class="item-detail">
+              <section class="item-detail__description">
+                <h2>Description</h2>
+                <div id="full-description"></div>
+              </section>
+              <div class="item-detail__map" id="map-embed"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

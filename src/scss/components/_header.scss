@@ -1,0 +1,9 @@
+.app-header {
+  width: 100%;
+  background-color: $color-primary;
+
+  .app-header__logo img {
+    width: 160px;
+    padding-top: 0.1em;
+  }
+}
