@@ -55,7 +55,7 @@ export function setContentById(id, content = "") {
   if (el) {
     el.innerText = content;
   } else {
-    console.warn(`element with id:${id} does not exists`);
+    console.warn(`element with id:${id} does not exist`);
   }
 }
 
