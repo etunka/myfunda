@@ -1,4 +1,4 @@
-# Funda Assignment Project
+#myFunda
 
 Demo: https://myfunda-ecetunca.netlify.com/
 
